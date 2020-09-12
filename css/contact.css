@@ -64,9 +64,7 @@ input[type="submit"]:hover {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -74,6 +72,7 @@ input[type="submit"]:hover {
 
   font-size: 1em;
   font-weight: 100;
+  z-index: 0;
 }
 
 /* Hide the browser's default radio button */
@@ -126,30 +125,28 @@ input[type="submit"]:hover {
   background: white;
 }
 
-@media screen and (max-width: 800px) {
-  .contact {
-    color: #fff;
-    margin-left: 50px;
-    width: 100%;
-    max-height: 100%;
-    padding-top: 20px;
-  }
-  .contact-form {
-    display: flex;
-    flex-flow: column wrap;
-    padding-left: 20px;
-    width: 75%;
-    margin-left: 30px;
-  }
+.contact {
+  color: #fff;
+  margin-left: 50px;
+  width: 100%;
+  max-height: 100%;
+  padding-top: 20px;
+}
+.contact-form {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 20px;
+  width: 75%;
+  margin-left: 30px;
+}
 
-  .type {
-    padding-top: 20px;
-    display: flex;
-    flex-flow: column wrap;
-  }
+.type {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column wrap;
+}
 
-  .radio {
-    font-weight: 100;
-    padding-top: 0;
-  }
+.radio {
+  font-weight: 100;
+  padding-top: 0;
 }

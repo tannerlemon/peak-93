@@ -1,0 +1,241 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #000;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.815);
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #dfbe99;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    position: fixed;
+    height: 100%;
+    width: 73px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.103);
+
+    padding-left: 10px;
+  }
+
+  .logo {
+    position: fixed;
+    bottom: 100px;
+    left: -45px;
+    transform: rotate(-90deg);
+    font-size: 1.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .checkbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 73px;
+    width: 73px;
+
+    opacity: 0;
+    cursor: pointer;
+
+    z-index: 9999;
+  }
+
+  .nav-toggle {
+    width: 73px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+
+  .menu-bar {
+    background: #fff;
+    width: 50px;
+    height: 1px;
+    border-radius: 10px;
+    margin: 5px 10px;
+
+    transition: transform 1s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease,
+      width 0.7s ease;
+  }
+
+  .bottom-bar {
+    width: 37px;
+  }
+
+  .checkbox:checked ~ a.nav-toggle .bottom-bar {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, -5px);
+  }
+
+  .checkbox:checked ~ a.nav-toggle .top-bar {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-3px, 8px);
+    width: 37px;
+  }
+
+  .checkbox:checked ~ a.nav-toggle .middle-bar {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  .nav h2 {
+    position: fixed;
+    top: 50px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: display 1s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .close-title {
+    display: none;
+  }
+
+  .checkbox:checked ~ .close-title {
+    display: block;
+  }
+
+  .checkbox:checked ~ .menu-title {
+    display: none;
+  }
+
+  .contact-button {
+    position: fixed;
+    z-index: 9999;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  a.contact-button:hover {
+      background-color: #fff;
+      color: rgba(0, 0, 0, 0.329);
+      font-weight: 400;
+
+  }
+
+  .menu {
+    position: fixed;
+    left: 73px;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 2.5em;
+    font-weight: 300;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 120px 7% 0 7%;
+    margin-bottom: 0;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .menu ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    padding: 20px 0;
+
+    transform: translate(-150%, 0);
+    transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials i {
+    padding: 10px;
+    font-size: 0.7em;
+  }
+
+  .menu p {
+    padding-bottom: 30%;
+  }
+
+  .checkbox:checked ~ .menu,
+  .checkbox:checked ~ .menu li {
+    transform: none;
+  }
+
+  .hero,
+  .section {
+    width: 100%;
+    z-index: -999;
+  }
+
+  .hero-video {
+    position: absolute;
+    z-index: -999;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .home-video {
+    position: absolute;
+    top: 100vh;
+    z-index: -999;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .home-video2 {
+    position: absolute;
+    top: 200vh;
+    z-index: -999;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .scroll {
+    color: rgba(255, 255, 255, 0.726);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+  }
+}

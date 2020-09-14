@@ -149,7 +149,7 @@ h1 {
 }
 
 a.contact-button:hover {
-  background-color: #EC9192;
+  background-color: #729EA1;
   color: #fff;
   font-weight: 400;
   padding: 20px;
@@ -215,77 +215,6 @@ a.contact-button:hover {
   z-index: -999;
 }
 
-.hero-video {
-  position: absolute;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.home-video1 {
-  position: absolute;
-  top: 100vh;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.home-video2 {
-  position: absolute;
-  top: 200vh;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.home-video3 {
-  position: absolute;
-  top: 300vh;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.home-video4 {
-  position: absolute;
-  top: 400vh;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.home-video5 {
-  position: absolute;
-  top: 500vh;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.home-video6 {
-  position: absolute;
-  top: 600vh;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
-.home-video7 {
-  position: absolute;
-  top: 700vh;
-  z-index: -999;
-  max-width: 100%;
-  min-height: 100vh;
-  object-fit: cover;
-}
-
 .scroll {
   color: rgba(255, 255, 255, 0.541);
   position: absolute;
@@ -299,3 +228,26 @@ a.contact-button:hover {
 .scroll p {
   color: rgba(255, 255, 255, 0.541);
 }
+
+.content {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+}
+
+.home-video {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+  object-fit: cover;
+  margin-bottom: 0;
+
+  scroll-snap-align: start;
+
+}
+

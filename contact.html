@@ -49,10 +49,11 @@
         <h2 class="close-title">close</h2>
         <div class="menu">
           <ul>
-            <li><a href="#">about</a></li>
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/about.html">about</a></li>
             <li><a href="#">projects</a></li>
             <li><a href="#">packages</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="/contact.html">contact</a></li>
           </ul>
           <div class="socials">
             <a href="https://www.facebook.com/peak93mediallc"
@@ -65,12 +66,17 @@
           <p>&#169; Peak 93 Media</p>
         </div>
       </nav>
+
       <section class="contact section">
         <div class="contact">
           <h1>Get in touch</h1>
           <p>We aim to respond to inquiries within 24 hours</p>
         </div>
-        <form class="contact-form">
+        <form
+          class="contact-form"
+          action="https://formspree.io/mrgozerw"
+          method="POST"
+        >
           <label for="fname">First name:</label>
           <input type="text" id="fname" name="fname" />
 

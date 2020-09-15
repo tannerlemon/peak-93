@@ -27,7 +27,12 @@ input {
   margin: 0;
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+  color: #fff;
+}
+
+input:focus {
+    outline: 1px solid #dfbe99;
 }
 
 textarea {
@@ -35,8 +40,14 @@ textarea {
   margin: 0;
   background: transparent;
   border: none;
-  border: 1px solid rgba(255, 255, 255, 0.507);
-  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.103);
+  border-radius: 1px;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+}
+
+textarea:focus {
+    outline: 1px solid #dfbe99;
 }
 
 .contact p {
@@ -59,75 +70,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #ec9192;
+  background-color: #5e6454;
   color: #fff;
   font-weight: 400;
   padding: 20px;
-}
-
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  font-size: 1em;
-  font-weight: 100;
-  z-index: 1;
-}
-
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 10;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #dfbe99;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #ec9192;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  top: 5px;
-  left: 6px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
 }
 
 .contact {
@@ -147,15 +93,12 @@ input[type="submit"]:hover {
   margin-right: 0;
 }
 
-.type {
-  position: relative;
-  padding-top: 20px;
-  display: flex;
-  flex-flow: column nowrap;
-  z-index: 0;
-}
-
-.radio {
-  font-weight: 100;
-  padding-top: 0;
+select {
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    margin: 10px 0;
+    outline: #dfbe99;
+    border-radius: 1px;
 }

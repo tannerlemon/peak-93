@@ -1,0 +1,12 @@
+body, html {
+    background: #8a927b;
+}
+
+.photo {
+    width: 100%;
+}
+
+.photos {
+    display: flex;
+    flex-flow: column nowrap;
+}

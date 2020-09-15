@@ -51,8 +51,7 @@
           <ul>
             <li><a href="/index.html">home</a></li>
             <li><a href="/about.html">about</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="/packages.html">packages</a></li>
+            <li><a href="/photography.html">photography</a></li>
             <li><a href="/contact.html">contact</a></li>
           </ul>
           <div class="socials">
@@ -86,29 +85,24 @@
           <label for="lname">Email:</label>
           <input type="email" id="email" name="email" />
 
-          <div class="type">
-            <label for="type">Type of project:</label>
-            <label class="container"
-              >Athletics
-              <input type="radio" checked="checked" name="athletics" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Corporate
-              <input type="radio" name="corporate" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Senior Photos
-              <input type="radio" name="senior photos" />
-              <span class="checkmark"></span>
-            </label>
-            <label class="container"
-              >Other
-              <input type="radio" name="other" />
-              <span class="checkmark"></span>
-            </label>
-          </div>
+          <label for="phone">Phone:</label>
+          <input type="phone" id="phone" name="phone" />
+
+          <label for="type">Type of project:</label>
+          <select name="type" id="type">
+            <option value="athletics">Athletics</option>
+            <option value="corporate">Corporate</option>
+            <option value="senior-photos">Senior photos</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="budget">What is your budget?</label>
+          <select name="budget" id="budget">
+            <option value="under-$1k">Under $1,000</option>
+            <option value="$1-2k">$1,000 - $2,000</option>
+            <option value="$2-3k">$2,000 - $3,000</option>
+            <option value="$3k+">$3,000+</option>
+          </select>
 
           <label for="message">Message:</label>
           <textarea

@@ -3,22 +3,23 @@ html {
   background-color: #8a927b;
   position: relative;
   z-index: -99999;
+  font-family: "Syne", sans-serif;
 }
 .page-wrapper {
   width: 100%;
 }
 
 ::placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: "Syne", sans-serif;
   color: rgba(255, 255, 255, 0.514);
   font-weight: 100;
 }
 
 label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Syne", sans-serif;
   font-weight: 300;
-  padding-bottom: 0;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 25px;
   margin: 0;
 }
 
@@ -43,7 +44,7 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.103);
   border-radius: 1px;
   color: #fff;
-  font-family: "roboto", sans-serif;
+  font-family: "Synei", sans-serif;
 }
 
 textarea:focus {

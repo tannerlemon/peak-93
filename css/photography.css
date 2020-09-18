@@ -1,13 +1,107 @@
-body, html {
-    background: #8a927b;
-    font-family: "Syne", sans-serif;
+body,
+html {
+  background: #8a927b;
+  font-family: "Syne", sans-serif;
 }
 
-.photo {
+@media screen and (max-width: 1010px) {
+  .photo {
     width: 100%;
-}
+  }
 
-.photos {
+  .photos {
     display: flex;
     flex-flow: column nowrap;
+  }
+}
+
+@media screen and (min-width: 1011px) {
+  .photo {
+    width: 33.3333333%;
+    object-fit: contain;
+    flex-basis: content;
+
+  }
+
+  .photos {
+    display: flex;
+    flex-flow: column wrap;
+    height: 675vh;
+  }
+
+  .photo-1 {
+      order: 1;
+  }
+  .photo-2 {
+      order: 9;
+  }
+  .photo-3 {
+      order: 17;
+  }
+  .photo-4 {
+      order: 2;
+  }
+  .photo-5 {
+      order: 10;
+  }
+  .photo-6 {
+      order: 18;
+  }
+  .photo-7 {
+      order: 3;
+  }
+  .photo-8 {
+      order: 11;
+  }
+  .photo-9 {
+      order: 19;
+  }
+  .photo-10 {
+      order: 4;
+  }
+  .photo-11 {
+      order: 12;
+  }
+  .photo-12 {
+      order: 20;
+  }
+  .photo-13 {
+      order: 5;
+  }
+  .photo-14 {
+      order: 13;
+  }
+  .photo-15 {
+      order: 21;
+  }
+  .photo-16 {
+      order: 6;
+  }
+  .photo-17 {
+      order: 14;
+  }
+  .photo-18 {
+      order: 22;
+  }
+  .photo-19 {
+      order: 7;
+  }
+  .photo-20 {
+      order: 15;
+  }
+  .photo-21 {
+      order: 23;
+  }
+  .photo-22 {
+      order: 8;
+  }
+  .photo-23 {
+      order: 16;
+  }
+  .photo-24 {
+      order: 24;
+  }
+  .photo-25 {
+      order: 25;
+  }
 }

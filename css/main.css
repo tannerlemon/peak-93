@@ -44,12 +44,13 @@ h1 {
 
 .logo {
   position: fixed;
-  bottom: 100px;
-  left: -40px;
+  bottom: 70px;
+  left: -55px;
   transform: rotate(-90deg);
-  font-size: 1.5em;
-  font-weight: 400;
-  text-transform: uppercase;
+  z-index: 99999;
+  width: 200px;
+  height: 73px;
+  object-fit: cover;
 }
 
 .checkbox {

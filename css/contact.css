@@ -148,7 +148,7 @@ input[type="submit"]:hover {
 }
 
 .type {
-    position: relative;
+  position: relative;
   padding-top: 20px;
   display: flex;
   flex-flow: column nowrap;

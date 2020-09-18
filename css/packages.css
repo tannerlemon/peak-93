@@ -1,0 +1,33 @@
+body,
+html {
+  background: #8a927b;
+}
+
+.main-video {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.103);
+  margin-top: 10px;
+}
+
+.packages {
+  margin-top: 20px;
+  margin-left: 93px;
+  color: #fff;
+  padding-right: 20px;
+}
+
+.single-package {
+  border: 1px solid rgba(255, 255, 255, 0.103);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}

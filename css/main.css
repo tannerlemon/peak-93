@@ -223,7 +223,7 @@ a.contact-button:hover {
   object-fit: cover;
 }
 
-.home-video {
+.home-video1 {
   position: absolute;
   top: 100vh;
   z-index: -999;
@@ -235,6 +235,51 @@ a.contact-button:hover {
 .home-video2 {
   position: absolute;
   top: 200vh;
+  z-index: -999;
+  max-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.home-video3 {
+  position: absolute;
+  top: 300vh;
+  z-index: -999;
+  max-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.home-video4 {
+  position: absolute;
+  top: 400vh;
+  z-index: -999;
+  max-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.home-video5 {
+  position: absolute;
+  top: 500vh;
+  z-index: -999;
+  max-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.home-video6 {
+  position: absolute;
+  top: 600vh;
+  z-index: -999;
+  max-width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.home-video7 {
+  position: absolute;
+  top: 700vh;
   z-index: -999;
   max-width: 100%;
   min-height: 100vh;

@@ -1,0 +1,54 @@
+body {
+  background: #8a927b;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 2%;
+}
+
+.first {
+  margin-top: 7%;
+}
+
+.video {
+  position: relative;
+  max-width: 70vw;
+  max-height: 70vh;
+  object-fit: cover;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+.video-section {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7%;
+  padding: 2%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+.video:focus {
+  outline: none;
+}
+
+.title-description {
+  max-width: 65vw;
+}
+
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 2em;
+    margin: 83px 83px 20px 83px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+    margin: 83px 83px 20px 83px;
+  }
+}

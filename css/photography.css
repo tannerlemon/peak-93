@@ -20,12 +20,11 @@ html {
     width: 33.3333333%;
     object-fit: contain;
     flex-basis: content;
-
   }
 
   .photos {
     display: flex;
     flex-flow: column wrap;
-    height: 675vh;
+    height: 900vh;
   }
 }
